@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<robot name="kingfisher"
+    xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+    xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+    xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Included URDF Files -->
+    <arg name="sonar_enabled" default="false"/>
+    <xacro:include filename="$(find kingfisher_description)/urdf/standard.urdf.xacro" />
+</robot>
