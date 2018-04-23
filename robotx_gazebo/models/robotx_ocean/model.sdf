@@ -18,43 +18,43 @@
 -->
 <sdf version="1.4">
 
-<model name="ocean">
+<model name="robotx_ocean">
   <static>true</static>
   <link name="ocean_link">
 
-  <visual name="ocean_visual1">
+  <visual name="robotx_ocean_visual1">
     <pose>0 0 0 0 0 0</pose>
     <geometry>
       <mesh>
-        <uri>model://ocean/meshes/mesh.dae</uri>
+        <uri>model://robotx_ocean/meshes/mesh.dae</uri>
         <scale>0.45 0.45 0.45</scale>
       </mesh>
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Waves_GLSL</name>
       </script>
     </material>
   </visual>
 
-  <visual name="ocean_below">
+  <visual name="robotx_ocean_below">
     <pose>0 0 0 0 0 0</pose>
     <geometry>
       <mesh>
-        <uri>model://ocean/meshes/mesh_below.dae</uri>
+        <uri>model://robotx_ocean/meshes/mesh_below.dae</uri>
         <scale>0.45 0.45 0.45</scale>
       </mesh>
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Waves_GLSL</name>
       </script>
     </material>
   </visual>
 
-  <visual name="north">
+  <visual name="robotx_north">
     <pose>234 0 -5 0 -1.5708 0</pose>
     <geometry>
       <plane>
@@ -64,13 +64,13 @@
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Seabox</name>
       </script>
     </material>
   </visual>
 
-  <visual name="south">
+  <visual name="robotx_south">
     <pose>-234 0 -5 0 1.5708 0</pose>
     <geometry>
       <plane>
@@ -80,13 +80,13 @@
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Seabox</name>
       </script>
     </material>
   </visual>
 
-  <visual name="west">
+  <visual name="robotx_west">
     <pose>0 234 -5 1.5708 0 0</pose>
     <geometry>
       <plane>
@@ -96,13 +96,13 @@
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Seabox</name>
       </script>
     </material>
   </visual>
 
-  <visual name="east">
+  <visual name="robotx_east">
     <pose>0 -234 -5 -1.5708 0 0</pose>
     <geometry>
       <plane>
@@ -112,7 +112,7 @@
     </geometry>
     <material>
       <script>
-        <uri>model://ocean/materials/scripts/ocean.material</uri>
+        <uri>model://robotx_ocean/materials/scripts/ocean.material</uri>
         <name>Seabox</name>
       </script>
     </material>
