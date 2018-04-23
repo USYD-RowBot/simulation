@@ -4,7 +4,7 @@ from scipy.optimize import fmin
 
 # Get thruster data from CSV file
 #data=np.genfromtxt('kingfisher_tcurve_nohead.csv',delimiter=',')
-data=np.genfromtxt('wamv_tcurve_nohead.csv',delimiter=',')
+data=np.genfromtxt('kingfisher_tcurve_nohead.csv',delimiter=',')
 
 # Plot
 ion()
@@ -83,4 +83,7 @@ text(0.05,0.7,txtstr,fontsize=14,transform=gca().transAxes,verticalalignment='to
 show()
 
 
+print("something")
+wait = input("PRESS ENTER TO CONTINUE.")
+print("something")
 

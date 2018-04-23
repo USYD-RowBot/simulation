@@ -40,7 +40,7 @@
     plugin configurations -->
     <include>
       <pose> 0 0 0 0 0 0 </pose>
-      <uri>model://models/ocean</uri>      
+      <uri>model://models/robotx_ocean</uri>      
     </include>
 
 
