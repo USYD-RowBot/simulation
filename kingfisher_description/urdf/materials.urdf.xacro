@@ -48,4 +48,5 @@ This program contains the materials for the Clearpath Kingfisher model.
 	<material name="Yellow">
 		<color rgba="0.8 0.8 0.0 1.0"/>
 	</material>
+
 </robot>
