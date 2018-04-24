@@ -58,7 +58,7 @@ This program contains the description of the robot base model for the Clearpath 
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <box size="0.001 0.001 0.001" />
+                <box size="1 1 0.001" />
             </geometry>
         </visual>
     </link>
@@ -66,7 +66,7 @@ This program contains the description of the robot base model for the Clearpath 
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <joint name="base_footprint_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0.2" rpy="0 0 0" />
         <parent link="base_footprint"/>
         <child link="base_link" />
     </joint>
@@ -130,14 +130,14 @@ This program contains the description of the robot base model for the Clearpath 
     </gazebo>
     <!-- PANEL-LINKS -->
     <!-- Top Plate -->
-    <kingfisher_part parent="base_footprint" name="left_panel" mesh="left_panel" translateX="0.0" translateY="-0.35" translateZ="0.05" rotateX="${M_PI/2}" rotateY="0.0" rotateZ="${M_PI/2}" color="Yellow" />
+    <!-- <kingfisher_part parent="base_footprint" name="left_panel" mesh="left_panel" translateX="0.0" translateY="-0.35" translateZ="0.05" rotateX="${M_PI/2}" rotateY="0.0" rotateZ="${M_PI/2}" color="Yellow" />
     <gazebo reference="base_footprint_left_panel_part">
         <material>Gazebo/Yellow</material>
     </gazebo>
     <kingfisher_part parent="base_footprint" name="right_panel" mesh="right_panel" translateX="0.0" translateY="0.35" translateZ="0.05" rotateX="${M_PI/2}" rotateY="0.0" rotateZ="${-M_PI/2}" color="Yellow" />
     <gazebo reference="base_footprint_right_panel_part">
         <material>Gazebo/Yellow</material>
-    </gazebo>
+    </gazebo> -->
     <!--Gazebo Plugin for simulating Kingfisher dynamics-->
     <!-- <gazebo><plugin name="kingfisher_dynamic" filename="libkingfisher_gazebo_plugins.so"><maxForce>62.0</maxForce><bodyName>base_link</bodyName><waterDensity>997.7735</waterDensity><waterLevel>5</waterLevel><xyzDampingFactor>20.0</xyzDampingFactor><yawDampingFactor>20.0</yawDampingFactor><rolPitDampingFactor>5.0</rolPitDampingFactor></plugin></gazebo> -->
 </robot>
