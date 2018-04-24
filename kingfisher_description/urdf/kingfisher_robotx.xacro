@@ -28,6 +28,9 @@
   <!-- Attach Sonar plugin -->
   <xacro:include filename="$(find kingfisher_description)/urdf/sensor_sonar.xacro" />
   <xacro:kingfisher_gazebo_p3d name="kingfisher_sonar"/>
+  <!-- Attach Velodyne plugin -->
+  <xacro:include filename="$(find kingfisher_description)/urdf/sensor_velodyne.xacro" />
+  <xacro:kingfisher_gazebo_velodyne name="kingfisher_velodyne"/>
 
 
 </robot>
