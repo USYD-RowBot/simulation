@@ -33,7 +33,7 @@
 				<metacentricWidth>0.415</metacentricWidth>
 				<!-- Waves x3 -->
 				<wave_n>3</wave_n>
-				<wave_amp0>0.06</wave_amp0>
+				<wave_amp0>0.4</wave_amp0>
 				<wave_period0>12.6</wave_period0>
 				<wave_direction0>-1 0</wave_direction0>
 				<wave_amp1>0.04</wave_amp1>
