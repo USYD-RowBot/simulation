@@ -105,7 +105,7 @@ This program contains the description of the robot base model for the Clearpath 
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <box size="${camera_link} ${camera_link} ${camera_link}"/>
+                <box size="${camera_link} ${camera_link} ${camera_link}"/>fi
             </geometry>
         </collision>
         <visual>
