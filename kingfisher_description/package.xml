@@ -11,6 +11,6 @@
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>urdf</run_depend>
   <run_depend>xacro</run_depend>
-  <depend>velodyne_description</depend>
+  <run_depend>velodyne_description</run_depend>
   <export></export>
 </package>

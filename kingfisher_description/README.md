@@ -33,3 +33,4 @@ Gazebo simulation in open ocean world:
 
 Data visualisation in RViz:
 ![Rviz view](images/ocean_buoys_2_rviz.png)
+

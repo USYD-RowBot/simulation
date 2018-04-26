@@ -12,3 +12,11 @@ In the `urdf` folder are located the configuration urdf files for :
 - the wind
 
 relative to each robot.
+
+## Models
+
+### Docking station
+
+Basic docking station to test image recognition and decision process.
+Currently with a green cross
+![Docked WAM-V](docs/images/dockedWamv.jpg)
