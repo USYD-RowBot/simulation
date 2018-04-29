@@ -17,6 +17,9 @@ relative to each robot.
 
 ### Docking station
 
+`robotx_docking`
+
 Basic docking station to test image recognition and decision process.
+
 Currently with a green cross
 ![Docked WAM-V](docs/images/dockedWamv.jpg)
