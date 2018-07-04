@@ -76,19 +76,19 @@ This program contains the description of the robot base model for the Clearpath 
         <inertial>
             <mass value="29" />
             <!--This is the pose of the inertial reference frame, relative to the link reference frame. The origin of the inertial reference frame needs to be at the center of gravity. The axes of the inertial reference frame do not need to be aligned with the principal axes of the inertia.-->
-            <origin xyz="0 0 0" />
+            <origin xyz="0 0 0.18" />
             <!--The 3x3 rotational inertia matrix. Because the rotational inertia matrix is symmetric, only 6 above-diagonal elements of this matrix are specified here, using the attributes ixx, ixy, ixz, iyy, iyz, izz.-->
             <inertia ixx="10" ixy="0" ixz="0" iyy="10" iyz="0" izz="10" />
         </inertial>
         <visual>
-            <origin xyz="0 0 0" rpy="${M_PI/2} 0 ${M_PI/2}" />
+            <origin xyz="0 0 0.18" rpy="${M_PI/2} 0 ${M_PI/2}" />
             <geometry>
                 <mesh filename="package://kingfisher_description/meshes/kingfisher_base.stl" />
             </geometry>
             <material name="DarkGray" />
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0.18" rpy="0 0 0" />
             <geometry>
                 <box size = "0.1 0.1 0.1"/>
                 <!--making it slightly bigger in x and z direction-->

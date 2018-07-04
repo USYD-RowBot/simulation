@@ -11,13 +11,13 @@
 				<mappingType>1</mappingType>
 				<!-- General dimensions -->
 				<boatArea>0.48</boatArea>
-				<boatWidth>0.98</boatWidth>
-				<boatLength>1.35</boatLength>
+				<boatWidth>4</boatWidth>
+				<boatLength>1</boatLength>
 				<thrustOffsetZ>-0.04</thrustOffsetZ>
 				<!-- Thrust specification -->
 				<maxCmd>1.0</maxCmd>
-				<maxForceFwd>21</maxForceFwd>
-				<maxForceRev>-6</maxForceRev>
+				<maxForceFwd>100</maxForceFwd>
+				<maxForceRev>-50</maxForceRev>
 				<cmdTimeout>1.0</cmdTimeout>
 			</plugin>
 		</gazebo>
