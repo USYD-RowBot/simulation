@@ -5,9 +5,9 @@
   <!--<env name="ROSCONSOLE_CONFIG_FILE" value="$(find kingfisher_gazebo)/config/custom_rosconsole.conf"/>
    -->
   <!-- Command line arguments -->
-  <arg name="world" default="sandisland_buoys.world" />
+  <arg name="world" default="ocean_buoys.world" />
   <!--arg name="usv" default="kingfisher"/-->
-  <arg name="usv" default="wamv"/> 
+  <arg name="usv" default="kingfisher"/> 
   <!-- <arg name="LOAD_KINGFISHER" value="$(eval usv=='kingfisher')"/> -->
   <!-- <arg name="LOAD_WAMV" value="$(eval usv=='wamv')"/> -->
   <arg name="name" default="WAMV" />

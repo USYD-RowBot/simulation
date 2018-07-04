@@ -1,38 +1,45 @@
-# Virtual Maritime RobotX Challenge (VMRC)
+# Rowbot 
 
-This is the entry point for teams participating in the current [RobotX Maritime Challenge](http://robotx.org/) or the upcoming VMRC in 2019.
+Sydney University Team 
+Robotx Challenge 2018
 
-Currently this project includes a basic set of Gazebo simulation elements and examples to support development of RobotX systems.  
-This is an active development project so we are adding and improving things all the time.  The project contains a simulation foundation, including an environment similar 
-to the RobotX venue and description of the WAM-V platform.  It is intended as a first step for teams that would then extend the tools for their specific development needs.
+## Description
 
-![VMRC](images/vmrc.jpg)
+This is a simulation stack for the Rowbot team. It includes Kingfisher and Wam-V robot descriptions, training worlds, to allow software development.
 
-## Getting Started
+## Use
 
-The [VMRC Wiki](https://bitbucket.org/osrf/vmrc/wiki) provides documentation on how to setup the simulation.  
-The instructions assume a basic familiarity with the ROS environment and Gazebo.  If these tools are new to you, we recommend starting with the excellent [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
+```sh
+roslaunch robotx_gazeo sandisland.launch
+# Or with parameters
+roslaunch robotx_gazeo sandisland.launch usv:=kingfisher world:=ocean_buoys.world
+```
 
+| Name  	| Values                                                    	| Description                   	|   	|
+|-------	|-----------------------------------------------------------	|-------------------------------	|---	|
+| usv   	| kingfisher wamv                                           	| The robot model to work with  	|   	|
+| world 	| ocean_buoys.world sandisland_buoys.world sandisland.world 	| World description                        	|   	|
 
-## Resources
+## Sources
 
-1. [VMRC Wiki](https://bitbucket.org/osrf/vmrc/wiki): Documentation, tutorials, etc.
+Most of `wamv_description` and `robotx_gazebo` come from the official `osrf/vmrc` Mercurial repository (https://bitbucket.org/osrf/vmrc), and are developped for te Virtual Maritime Challenge.
 
-## Contributing
+They included the sources of the `usv_gazebo_plugins` inside for practical reasons (these can be find at https://github.com/bsb808/usv_gazebo_plugins).
 
-The simulation tools are being actively developed and extended to support the RobotX teams.  We are starting simple with the important fundamental aspects of the robot and environment, 
-but will rely on the community to develop additional functionality around their particular use cases.  Below are some thoughts for ways that teams can contribute, but if you
-are working on anything that others may find useful, please share!
+The `kingfisher_description` is an extension of the Clearpath's official URDF description (accessible at https://github.com/kf/kingfisher).
 
- * Acoustics: Including some simple models of the pinger-based tasks will require a rudimentary acoustics model.  There is some evidence of past acoustics sources/sinks in Gazebo with the [OpenAL API](http://osrf-distributions.s3.amazonaws.com/gazebo/api/7.1.0/classgazebo_1_1util_1_1OpenAL.html), but does not appear to be frequently used.
- * Course Models:  Currently we have supplied models of the WAM-V platform and some of the simple buoys.  Developing representations of the other course components, such as the dock, totems, etc. would expand number of tasks amenable to simulation. 
- * Sensor Examples: Use of simple sensors such as GPS, IMU, camera, etc. are illustrated tutorial section of the wiki.  There are obviously many more sensors being used by the teasm (Velodyne lidar).  Providing examples or recipes for using these sensors in simulation would be a nice contribution.
- * Wave Field: The current wave field is very simple, based on three element Gerstner waves.  Furthermore, the visual representation of the wave field is independent of the displacement seen by the USV.  Adding the ability to simulate higher fidelity wave spectra would be an improvement.
- * Rviz: We have not tested these tools working with Rviz, which often exposes problems with the tf tree.  
- 
-If you have any questions about these topics, or would like to work on other aspects, please contribute.  You can contact us directly (see below), submit an issue or, even better yet, submit a pull request.
+## Dependencies
 
-## Contacts
+Tested platform : Ubuntu 16.04 LTS, ROS Kinetic Kame, Gazebo 7
 
- * Carlos Aguero <caguero@osrfoundation.org>
- * Brian Bingham <bbingham@nps.edu>
+### Velodyne Simulator
+
+Gazebo plugin to simulate Gazebo LIDAR. 
+
+https://bitbucket.org/DataspeedInc/velodyne_simulator/
+
+### URDF tutorials
+
+Optionnal dev depedency. 
+Used to check the consistency of URDF descriptions
+

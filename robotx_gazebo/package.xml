@@ -24,6 +24,8 @@
   <depend>roscpp</depend>
   <depend>std_msgs</depend>
   <depend>wamv_description</depend>
+  <depend>kingfisher_description</depend>
+
 
   <exec_depend>message_runtime</exec_depend>
 
