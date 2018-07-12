@@ -16,11 +16,14 @@
 <!-- Joystick Teleop -->
 <rosparam file="$(find robotx_gazebo)/config/diffdrive.yaml"
 	  command="load"/>
-<node pkg="joy_teleop" type="joy_teleop.py" name="joy_teleop">
+<!--node pkg="joy_teleop" type="joy_teleop.py" name="joy_teleop">
   <remap from="cmd_vel" to="cmd_vel" />
-</node>
+</node-->
 
 <!-- Convert Twist messages to Drive messages -->
-<node pkg="robotx_gazebo" type="twist2drive_keyboard.py" name="twist2drive_keyboard" output="screen" />
+<node pkg="robotx_gazebo" type="twist2drive_v2.py" name="twist2drive_v2" output="screen" >
+
+    <remap from="odom" to="rowbot/odometry/filtered" />
+</node>
 
 </launch>
