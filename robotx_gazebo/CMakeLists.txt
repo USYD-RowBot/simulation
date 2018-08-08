@@ -136,6 +136,12 @@ install(TARGETS usv_gazebo_wind_plugin
   RUNTIME DESTINATION bin
 )
 
+add_library(Blink SHARED src/BlinkVisualPlugin.cc)
+target_link_libraries(Blink 
+  ${catkin_LIBRARIES}
+  ${GAZEBO_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############
@@ -155,6 +161,8 @@ install(DIRECTORY models/
 # Install all the launch files
 install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
+
+
 
 # Configure the setup script
 #catkin_add_env_hooks(99_robotx_gazebo_setup
